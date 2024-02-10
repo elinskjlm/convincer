@@ -1,0 +1,134 @@
+/* TODO
+>reponsivity V?
+>accesibility
+>input to be clearly for input V?
+>style
+>bottun (wtf)
+>flicker? placeholder if submitted empty X no.
+ */
+
+html * {
+    margin: 0;
+    padding: 0;
+    background-color: #11235A;
+    color: #C6CF9B;
+    caret-color: #C6CF9B;
+    box-sizing: border-box;
+    /* transition: 0.5s; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+.secForm {
+    display: block;
+    height: 100vh;
+}
+
+#inpOpinion,
+#convincingText {
+    border: none;
+    display: block;
+    width: 90%;
+    height: 5em;
+    text-align: center;
+    font-size: 16px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: inherit;
+}
+
+#inpOpinion {
+    box-shadow: inset 0px 0px 5px 0px #c6cf9b32, 0px 0px 5px 0px #c6cf9b32;
+}
+
+#convinceLabelHead,
+#convinceLabelTail {
+    display: inline;
+}
+
+#btnExpress {
+    display: inline-block;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    background-color: #66470c;
+    color: #C6CF9B;
+    border: none;
+}
+
+#convincingButtons {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
+#convincingButtons button,
+#btnExpress {
+    height: 2em;
+    padding: 0 0.5em;
+    margin: 0 0.5em;
+    font-size: 16px;
+    background-color: #66470c;
+    color: #C6CF9B;
+    border: none;
+    cursor: pointer;
+}
+
+#convincingButtons button:hover,
+#btnExpress:hover {
+    box-shadow: 0px 10px 5px -5px #C6CF9B;
+}
+
+@media only screen and (min-width: 596px) {
+    #convincingButtons button {
+        font-size: 17px;
+    }
+
+    #convincingText {
+        font-size: 18px;
+    }
+
+    #btnExpress {
+        margin: 0;
+        bottom: 40px;
+        height: 3em;
+        padding: 0% 3em;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-height: 300px) {
+    #convincingButtons button {
+        height: 3em;
+        padding: 0 1em;
+        margin: 0 1em;
+        font-size: 17px;
+    }
+
+    #convincingText {
+        font-size: 18px;
+    }
+
+    #convincingButtons {
+        bottom: 40px;
+    }
+
+    #btnExpress {
+        bottom: 1%;
+        height: 3em;
+        font-size: 20px;
+    }
+}
