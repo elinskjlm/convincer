@@ -16,4 +16,5 @@
 14. **FIXED** Also, `New Opinion` button is floating over the 2 others when window width is too narrow.
 15. No "Documentation" (lol).
 16. Fix this `label` error that appears on devtools.
+17. **BUG** Text in convinsing is flowing down instead of first using territory above. May use flexbox and flex-wrap to fix.
 
